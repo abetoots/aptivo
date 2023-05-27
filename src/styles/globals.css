@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: rgb(110 226 245);
+    --secondary: rgb(101, 104, 240);
+
+    --accent-1: rgb(205, 214, 244);
+    --accent-1-foreground: black;
+
+    --accent-2: rgb(255, 239, 154);
+    --accent-2-foreground: black;
+
+    --accent-3: rgb(255, 234, 238);
+    --accent-3-foreground: black;
+
+    --background: rgb(255, 255, 255);
+    --foreground: black;
+
+    --blob-gradient: linear-gradient(
+      to right,
+      var(--primary),
+      var(--secondary)
+    );
+  }
+}

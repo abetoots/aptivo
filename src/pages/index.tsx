@@ -22,7 +22,7 @@ import type {
 import useHackerEffect from "~/lib/hooks/useHackerEffect";
 import useBlobEffect from "~/lib/hooks/useBlobEffect";
 import { cn } from "~/lib/utils";
-import { buttonVariants } from "~/components/Button";
+import Button, { buttonVariants } from "~/components/Button";
 import Link from "next/link";
 
 const Home: NextPage = () => {
@@ -54,10 +54,12 @@ const Home: NextPage = () => {
       {styles}
       <div className="relative flex min-h-screen flex-col overflow-hidden">
         <Head>
-          <title>Aptivo | Automate Digital Marketing</title>
+          <title>
+            Aptivo | Automate and Accelerate Business Wealth and Growth
+          </title>
           <meta
             name="description"
-            content="Aptivo is a digital marketing automation platform that helps you create and manage your digital marketing campaigns."
+            content="Aptivo is a B2B platform that helps build wealth and accelerate growth for business owners. We help supercharge your growth, unlock opportunities, and scale your business. "
           />
         </Head>
         <Header className="z-10">
@@ -86,16 +88,24 @@ const Home: NextPage = () => {
             options={NasaConfig as RecursivePartial<IOptions>}
           />
           {/* @ts-ignore */}
-          <div ref={screenRef} className="z-10 mt-60 p-6">
+          <div ref={screenRef} className="relative z-10 mt-60 p-6">
             <h1 className="mb-6 cursor-default text-3xl font-semibold uppercase md:text-6xl lg:text-9xl">
               Your Business.{" "}
               <span ref={textRef} data-value="Revolutionized">
                 Revolutionized
               </span>
             </h1>
-            <p className="text-gray-500 md:text-lg lg:text-xl">
-              Igniting succcess, one innovation at a time
+            <p className="mb-6 leading-relaxed text-gray-500 md:text-lg lg:text-xl">
+              Igniting succcess and building wealth for business owners, one
+              innovation at a time.
             </p>
+
+            <Link
+              className={cn(buttonVariants({ variant: "default" }))}
+              href="/learn"
+            >
+              Get Started
+            </Link>
           </div>
         </main>
       </div>

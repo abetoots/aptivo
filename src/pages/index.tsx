@@ -20,14 +20,14 @@ import type {
   RecursivePartial,
 } from "tsparticles-engine";
 import useHackerEffect from "~/lib/hooks/useHackerEffect";
-import useBlobEffect, { BlobStyles } from "~/lib/hooks/useBlobEffect";
+import useBlobEffect from "~/lib/hooks/useBlobEffect";
 import { cn } from "~/lib/utils";
 import { buttonVariants } from "~/components/Button";
 import Link from "next/link";
 
 const Home: NextPage = () => {
   const { screenRef, textRef } = useHackerEffect();
-  const { blobRef } = useBlobEffect("var(--blob-gradient)");
+  const { blobRef, styles, pointerRef } = useBlobEffect("var(--blob-gradient)");
 
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <BlobStyles />
+      {styles}
       <div className="relative flex min-h-screen flex-col overflow-hidden">
         <Head>
           <title>Aptivo | Automate Digital Marketing</title>
@@ -73,7 +73,10 @@ const Home: NextPage = () => {
             </nav>
           </div>
         </Header>
-        <main className="flex-1 snap-y snap-mandatory scroll-smooth">
+        <main
+          className="flex-1 snap-y snap-mandatory scroll-smooth"
+          ref={pointerRef}
+        >
           {/* @ts-ignore */}
           <div ref={blobRef}></div>
           <Particles

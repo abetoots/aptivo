@@ -65,7 +65,7 @@ const Home: NextPage = () => {
         <Header className="z-10">
           <div className="ml-auto ">
             <nav className="flex items-center gap-6">
-              <Link href="/features">Features</Link>
+              <Link href="/contact">Contact Us</Link>
               <Link
                 href="/login"
                 className={cn(buttonVariants({ variant: "accent" }))}

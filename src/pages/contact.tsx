@@ -1,24 +1,26 @@
+//Components
 import Head from "next/head";
 import Link from "next/link";
-import { buttonVariants } from "~/components/Button";
 import Header from "~/components/Header";
-import { cn } from "~/lib/utils";
 import UnderConstructionSvg from "~/assets/under-construction.svg";
 
-const Features = () => {
+//Misc
+import { buttonVariants } from "~/components/Button";
+import { cn } from "~/lib/utils";
+
+const ContactUs = () => {
   return (
     <>
       <Head>
-        <title>Aptivo Features</title>
+        <title>Contact Us</title>
         <meta
           name="description"
-          content="Aptivo is a digital marketing automation platform that helps you create and manage your digital marketing campaigns."
+          content="Aptivo is a suite of tools and services to help you grow your business. We help you automate and accelerate your business wealth and growth. Contact us for any inquiries you may have."
         />
       </Head>
       <Header className="z-10">
         <div className="ml-auto ">
           <nav className="flex items-center gap-6">
-            <Link href="/features">Features</Link>
             <Link
               href="/login"
               className={cn(buttonVariants({ variant: "accent" }))}
@@ -46,4 +48,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default ContactUs;

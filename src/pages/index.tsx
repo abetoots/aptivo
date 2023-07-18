@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //Components
 import Head from "next/head";
-import Header from "~/components/Header";
+import Header from "@/components/header";
 import Particles from "react-particles";
 
 //Misc
 import { loadFull } from "tsparticles";
 import { loadPolygonPath } from "tsparticles-path-polygon";
 
-import NasaConfig from "~/particles-nasa.json";
+import NasaConfig from "@/particles-nasa.json";
 
 //Types
 import { type NextPage } from "next";
@@ -19,10 +19,10 @@ import type {
   IOptions,
   RecursivePartial,
 } from "tsparticles-engine";
-import useHackerEffect from "~/lib/hooks/useHackerEffect";
-import useBlobEffect from "~/lib/hooks/useBlobEffect";
-import { cn } from "~/lib/utils";
-import Button, { buttonVariants } from "~/components/Button";
+import useHackerEffect from "@/lib/hooks/useHackerEffect";
+import useBlobEffect from "@/lib/hooks/useBlobEffect";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
 const Home: NextPage = () => {
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           </title>
           <meta
             name="description"
-            content="Aptivo is a B2B platform that helps build wealth and accelerate growth for business owners. We help supercharge your growth, unlock opportunities, and scale your business. "
+            content="Aptivo is a B2B platform that helps accelerate growth for business owners. We help you unlock opportunities and scale your business. We provide apps or our team of experts, whichever suits your needs. "
           />
         </Head>
         <Header className="z-10">

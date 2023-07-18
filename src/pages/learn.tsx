@@ -1,22 +1,22 @@
 //Components
 import Head from "next/head";
 import Link from "next/link";
-import Header from "~/components/Header";
-import HandDrawMailSvg from "~/assets/handdrawn-mail.svg";
-import PaydaySvg from "~/assets/payday.svg";
-import HandDrawnAccountingSvg from "~/assets/handdrawn-accounting.svg";
-import HandDrawnAssistantSvg from "~/assets/handdrawn-assistant.svg";
-import HandDrawnGraphicDesignSvg from "~/assets/handdrawn-graphic-design.svg";
-import HandDrawnWebDesignSvg from "~/assets/handdrawn-web-design.svg";
-import HandDrawnColdCalllingSvg from "~/assets/handdrawn-cold-calling.svg";
-import HandDrawnCustomerSupportSvg from "~/assets/handdrawn-customer-support.svg";
-import HandDrawnLeadGenerationSvg from "~/assets/handdrawn-lead-generation.svg";
-import HandDrawnSocialMediaMarketingSvg from "~/assets/handdrawn-social-media-marketing.svg";
+import Header from "@/components/header";
+import HandDrawMailSvg from "@/assets/handdrawn-mail.svg";
+import PaydaySvg from "@/assets/payday.svg";
+import HandDrawnAccountingSvg from "@/assets/handdrawn-accounting.svg";
+import HandDrawnAssistantSvg from "@/assets/handdrawn-assistant.svg";
+import HandDrawnGraphicDesignSvg from "@/assets/handdrawn-graphic-design.svg";
+import HandDrawnWebDesignSvg from "@/assets/handdrawn-web-design.svg";
+import HandDrawnColdCalllingSvg from "@/assets/handdrawn-cold-calling.svg";
+import HandDrawnCustomerSupportSvg from "@/assets/handdrawn-customer-support.svg";
+import HandDrawnLeadGenerationSvg from "@/assets/handdrawn-lead-generation.svg";
+import HandDrawnSocialMediaMarketingSvg from "@/assets/handdrawn-social-media-marketing.svg";
 
 //Misc
 import React from "react";
-import { cn } from "~/lib/utils";
-import { buttonVariants } from "~/components/Button";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 const Learn = () => {
   return (
@@ -70,7 +70,7 @@ const Learn = () => {
               title="NextSend"
               description="Automate sending of targeted emails. Turn your signups into profitable customer relationships."
               renderAfter={() => (
-                <div className="mb-6 w-fit rounded-full bg-accent-1 px-4 py-1 text-xs text-secondary">
+                <div className="bg-accent-1 mb-6 w-fit rounded-full px-4 py-1 text-xs text-secondary">
                   Launching Q3 2023
                 </div>
               )}
@@ -87,7 +87,7 @@ const Learn = () => {
                   delivery, salary and tax payments, and employee benefits, all
                   in one place."
               renderAfter={() => (
-                <div className="mb-6 w-fit rounded-full bg-accent-1 px-4 py-1 text-xs text-secondary">
+                <div className="bg-accent-1 mb-6 w-fit rounded-full px-4 py-1 text-xs text-secondary">
                   Launching Q4 2023
                 </div>
               )}

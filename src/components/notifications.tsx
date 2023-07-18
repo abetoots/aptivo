@@ -11,7 +11,7 @@ import {
 
 //Misc
 import { toast } from "react-toastify";
-import { exposeStyles } from "~/lib/styles";
+import { exposeStyles } from "@/lib/styles";
 
 //Types
 import type { ToastContentProps, ToastOptions } from "react-toastify";

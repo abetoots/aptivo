@@ -1,10 +1,10 @@
 //Components
-import Logo from "~/components/Logo";
+import Logo from "@/components/logo";
 import Link from "next/link";
 
 //Misc
 import React from "react";
-import { cn } from "~/lib/utils";
+import { cn } from "@/lib/utils";
 
 const Header = (props: React.PropsWithChildren<{ className?: string }>) => {
   return (

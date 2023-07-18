@@ -1,7 +1,7 @@
 //Misc
 import { SessionProvider } from "next-auth/react";
-import { api } from "~/lib/api";
-import "~/styles/globals.css";
+import { api } from "@/lib/api";
+import "@/styles/globals.css";
 import { Rubik } from "next/font/google";
 
 //Types

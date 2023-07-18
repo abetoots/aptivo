@@ -1,12 +1,12 @@
 //Components
 import Head from "next/head";
 import Link from "next/link";
-import Header from "~/components/Header";
-import UnderConstructionSvg from "~/assets/under-construction.svg";
+import Header from "@/components/header";
+import UnderConstructionSvg from "@/assets/under-construction.svg";
 
 //Misc
-import { buttonVariants } from "~/components/Button";
-import { cn } from "~/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const ContactUs = () => {
   return (

@@ -1,9 +1,9 @@
 //Components
-import { Icons } from "~/components/Icons";
-import Input from "~/components/ui/Input";
-import Label from "~/components/ui/Label";
-import { buttonVariants } from "~/components/Button";
-import { notifySuccess } from "~/components/Notifications";
+import { Icons } from "@/components/icons";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { buttonVariants } from "@/components/ui/button";
+import { notifySuccess } from "@/components/notifications";
 
 //Misc
 import * as React from "react";
@@ -11,8 +11,8 @@ import * as React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 // import { signIn } from "next-auth/react";
 import { useForm } from "react-hook-form";
-import { cn } from "~/lib/utils";
-import { userAuthSchema } from "~/lib/validations/auth";
+import { cn } from "@/lib/utils";
+import { userAuthSchema } from "@/lib/validations/auth";
 
 //Types
 import type * as z from "zod";

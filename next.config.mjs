@@ -23,8 +23,8 @@ const config = {
       // Convert all other *.svg imports to React components
       {
         test: /\.svg$/i,
-        issuer: /\.[jt]sx?$/,
-        resourceQuery: { not: /url/ }, // exclude if *.svg?url
+        issuer: fileLoaderRule.issuer,
+        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
         use: ["@svgr/webpack"],
       }
     );
@@ -34,7 +34,6 @@ const config = {
 
     return config;
   },
-  reactStrictMode: true,
 
   /**
    * If you have `experimental: { appDir: true }` set, then you must comment the below `i18n` config
@@ -42,9 +41,9 @@ const config = {
    *
    * @see https://github.com/vercel/next.js/issues/41980
    */
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
+  //   i18n: {
+  //     locales: ["en"],
+  //     defaultLocale: "en",
+  //   },
 };
 export default config;

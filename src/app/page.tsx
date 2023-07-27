@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //Components
 import Head from "next/head";

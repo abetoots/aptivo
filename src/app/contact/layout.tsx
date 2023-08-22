@@ -3,6 +3,7 @@ import Logo from "@/components/logo";
 
 //Misc
 import { Icons } from "@/components/icons";
+import { buttonVariants } from "@/components/ui/button";
 
 const ContactLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -19,7 +20,9 @@ const ContactLayout = ({ children }: { children: React.ReactNode }) => {
             <Icons.chat className="h-10 w-10 rounded-md border border-gray-300 p-2" />
           </div>
           <div className="flex flex-col">
-            <h3 className="font-heading text-xl">Have an inquiry?</h3>
+            <h3 className="font-heading text-xl">
+              <Link href="/contact">Have an inquiry?</Link>
+            </h3>
             <p>
               You can reach our team anytime via: <br />{" "}
               <strong>
@@ -37,6 +40,16 @@ const ContactLayout = ({ children }: { children: React.ReactNode }) => {
             <p>
               Mon-Fri from 8am to 5pm. <br /> <strong>+639062549734</strong>
             </p>
+          </div>
+        </div>
+        <div className="mb-12 flex">
+          <div className="mr-4 ">
+            <Icons.calculator className="h-10 w-10 rounded-md border border-gray-300 p-2" />
+          </div>
+          <div className="flex flex-col justify-center">
+            <Link className={buttonVariants()} href="/contact/estimate">
+              <h3 className="font-heading text-lg">Get an estimate</h3>
+            </Link>
           </div>
         </div>
       </section>

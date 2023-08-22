@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.0",
+    "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-label": "^2.0.1",
     "@radix-ui/react-slot": "^1.0.2",
     "@t3-oss/env-nextjs": "^0.2.1",
@@ -21,7 +22,7 @@
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.261.0",
-    "next": "^13.4.10",
+    "next": "^13.4.13",
     "next-auth": "^4.21.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -35,7 +36,8 @@
     "tsparticles": "^2.9.3",
     "tsparticles-engine": "^2.9.3",
     "tsparticles-path-polygon": "^2.9.3",
-    "zod": "^3.21.4"
+    "zod": "^3.21.4",
+    "zod-form-data": "^2.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",

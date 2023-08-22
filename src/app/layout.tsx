@@ -1,4 +1,3 @@
-//Components
 import { ToastContainer } from "react-toastify";
 
 //Misc
@@ -10,6 +9,7 @@ import { cn } from "@/lib/utils";
 
 //Types
 import type { Metadata } from "next";
+import "react-toastify/dist/ReactToastify.css";
 
 const fontSans = Rubik({ subsets: ["latin"], variable: "--font-sans" });
 
